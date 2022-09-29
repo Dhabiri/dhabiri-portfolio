@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Dhabiri, web developer, frontend, develop, developed">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <script src="https://kit.fontawesome.com/9c0fbc2a11.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/images/106269692.jpeg">
+    <title>Dhabiri | Front-end Web Developer</title>
+</head>
+
+<body id="dark">
+    <nav id="dark-text">
+        <label class="logo">DHABIRI</label>
+        <ul class="nav-links" id="darko">
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#myProject">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <label id="icon" class="toggle-button">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </nav>
+
+    <ul class="animation-text">
+        <li style="--i:1">D</li>
+        <li style="--i:1.1">H</li>
+        <li style="--i:1.2">A</li>
+        <li style="--i:1.3">B</li>
+        <li style="--i:2.2">I</li>
+        <li style="--i:2.1">R</li>
+        <li style="--i:1.2">I</li>
+    </ul>
+
+    <header id="aboutMe">
+        <div class="container">
+            <div class="flex">
+                <div>
+                    <img src="/images/106269692.jpeg" alt="Dhabiri">
+                </div>
+                <div>
+                    <h1>About Me</h1>
+                    <p>I gained interest in web development at on the onset of the ASUU
+                        (Academic
+                        Staff Union of
+                        Universities) strike. I wanted something pass time with so I started learning HTML. It started
+                        as hobby but now I intend to take it professional. I'm a frontend web developer with an eye of
+                        aesthetics and the enthusiasm to grow and improve myself. I'm also passionate about open source
+                        projects.</p>
+                    <p>You can catch me on...</p>
+                    <div class="social">
+                        <a href="https://github.com/Dhabiri" target="_blank"><img src="/images/iconmonstr-github-1.svg"
+                                alt="github"></a>
+                        <a href="https://twitter.com/Dhabiri1" target="_blank"><img
+                                src="/images/iconmonstr-twitter-1.svg" alt="twitter"></a>
+                        <a href="https://linkedin.com/in/babatunde-dabiri-2a8597244" target="_blank"><img
+                                src="/images/iconmonstr-linkedin-3.svg" alt="linkedin"></a>
+                        <a href="https://wa.me/message/EMGPUCW3EYT6C1" target="_blank"><img
+                                src="/images/iconmonstr-whatsapp-1.svg" alt="whatsapp"></a>
+                    </div>
+                    <a href="/resume/Babatunde Dabiri's CV.pdf" download><button>View resume</button></a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <section class="project" id="myProject">
+        <div class="container">
+            <h1>My projects</h1>
+            <div class="flex">
+                <div class="box">
+                    <img src="/images/intercomp.png" alt="intercomp">
+                    <p>Rating component</p>
+                    <div class="tech">
+                        <button>HTML</button>
+                        <button>CSS</button>
+                        <button>JavaScript</button>
+                    </div>
+                    <div class="check">
+                        <a href="https://interactivecomp.netlify.app/" target="_blank"><button>Live</button></a>
+                        <a href="https://github.com/Dhabiri/interactivecomp" target="_blank"><button>GitHub</button></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="/images/expensecomp.png" alt="expensecomp">
+                    <p>Expenses demo page</p>
+                    <div class="tech">
+                        <button>HTML</button>
+                        <button>CSS</button>
+                        <button>Chart.js</button>
+                    </div>
+                    <div class="check">
+                        <a href="https://expenses-comp.netlify.app/" target="_blank"><button>Live</button></a>
+                        <a href="https://github.com/Dhabiri/expenses-comp" target="_blank"><button>GitHub</button></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="/images/ewOUE3KR.jpg_medium" alt="expensecomp">
+                    <p>Calcmini</p>
+                    <div class="tech">
+                        <button>CSS</button>
+                        <button>JavaScript</button>
+                    </div>
+                    <div class="check">
+                        <a href="https://calcmini.netlify.app/" target="_blank"><button>Live</button></a>
+                        <a href="https://github.com/Dhabiri/calcmini" target="_blank"><button>GitHub</button></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="/images/fylo.png" alt="fylo">
+                    <p>Fylo landing page</p>
+                    <div class="tech">
+                        <button>HTML</button>
+                        <button>CSS</button>
+                        <button>JavaScript</button>
+                    </div>
+                    <div class="check">
+                        <a href="https://the-fylo-page.netlify.app/" target="_blank"><button>Live</button></a>
+                        <a href="https://github.com/Dhabiri/fylo" target="_blank"><button>GitHub</button></a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer id="contact">
+        <form onsubmit="sendEmail(); reset(); return; false;">
+            <h1>Contact me</h1>
+            <input type="text" id="name" required placeholder="Your name goes here"><br><br><br>
+            <input type="text" id="email" required placeholder="Your email..."><br><br><br>
+            <textarea id="message" cols="30" rows="10"
+                placeholder="What would you like? (Coffee chat, Work, Collaboration, Other)"></textarea><br><br>
+            <button type="submit" id="submit">That'll be all</button>
+        </form>
+    </footer>
+
+    <script src="/index.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</body>
+
+</html>
